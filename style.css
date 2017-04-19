@@ -1,0 +1,297 @@
+/* --- general --- */
+body {
+	background-color: #ccc;
+	-moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+	-ms-user-select: none;
+  user-select: none;
+}
+/* ------------------ */
+
+
+
+/* game "casing" (circular elements and bars) */
+#outerCircle {
+	position: relative;
+	margin: auto;
+	margin-top: 70px;
+	width: 420px;
+	height: 420px;
+	border: 23px solid #333;
+	border-radius: 50%;
+	background-color: #333;
+	box-shadow: 0px 0px 15px #333;
+}
+
+#verticalBar {
+	position: absolute;
+	left: 47%;
+	width: 6%;
+	height: 100%;
+	background-color: #333;
+}
+
+#horizontalBar {
+	position: absolute;
+	top: 47%;
+	width: 100%;
+	height: 6%;
+	background-color: #333;
+}
+
+#panelOuter{
+	position: absolute;
+	top: 22%;
+	left: 22%;
+	width: 56%;
+	height: 56%;
+	border-radius: 50%;
+	background-color: #333;
+	
+}
+
+#panelInner {
+	position: absolute;
+	top: 5%;
+	left: 5%;
+	width: 90%;
+	height: 90%;
+	border-radius: 50%;
+	background-color: #eee;
+}
+/* ------------------ */
+
+
+
+/* color buttons */
+#innerGreen {
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 50%;
+	height: 50%;
+	border-radius: 50%;
+	background-color: #00A74A;
+	border-radius: 100% 0% 0% 0%;
+}
+
+#innerRed {
+	position: absolute;
+	top: 0%;
+	left: 50%;
+	width: 50%;
+	height: 50%;
+	border-radius: 50%;
+	background-color: #9F0F17;
+	border-radius: 0% 100% 0% 0%;
+}
+
+#innerYellow {
+	position: absolute;
+	top: 50%;
+	left: 0%;
+	width: 50%;
+	height: 50%;
+	border-radius: 50%;
+	background-color: #CCA707;
+	border-radius: 0% 0% 0% 100%;
+}
+
+#innerBlue {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 50%;
+	height: 50%;
+	border-radius: 50%;
+	background-color: #094A8F;
+	border-radius: 0% 0% 100% 0%;
+}
+/* ------------------ */
+
+
+
+/* control panel elements */
+#simonText {
+	text-align: center;
+	color: #222;
+	margin-top: 15%;
+	font: 48px 'Alfa Slab One', cursive;
+}
+
+sup {
+	font-size: 32%;
+}
+
+#counter {
+	position: absolute;
+	top: 50%;
+	left: 10%;
+	width: 24%;
+	height: 15%;
+	border-radius: 10px;
+	background-color: #2B0D03;
+	color: #570903;
+	border: 4px solid #333;
+	line-height: 32px;
+	font: 32px 'VT323', monospace;
+	text-align: center;
+}
+
+#startButton {
+	position: absolute;
+	top: 53%;
+	left: 46%;
+	width: 10%;
+	height: 10%;
+	border-radius: 50%;
+	background-color: red;
+	border: 4px solid #333;
+	box-shadow: 0px 2px 3px #333;
+	cursor: pointer;
+}
+
+#startButton:active {
+	top: 53.5%;
+	box-shadow: 0px 1px 2px #888;
+}
+
+#strictButton {
+	position: absolute;
+	top: 53%;
+	left: 70%;
+	width: 10%;
+	height: 10%;
+	border-radius: 50%;
+	background-color: yellow;
+	border: 4px solid #333;
+	box-shadow: 0px 2px 3px #333;
+	cursor: pointer;
+}
+
+#strictButton:active {
+	top: 53.5%;
+	box-shadow: 0px 1px 2px #888;
+}
+
+#strictDiode {
+	position: absolute;
+	top: 46%;
+	left: 74.5%;
+	width: 3%;
+	height: 3%;
+	border-radius: 50%;
+	background-color: #222;
+	border: 2px solid #222;
+}
+
+#switch {
+	position: absolute;
+	top: 83%;
+	left: 40%;
+	width: 20%;
+	height: 10%;
+	border-radius: 3px;
+	background-color: #222;
+	cursor: pointer;
+}
+
+#switchButton {
+	position: absolute;
+	top: 84%;
+	left: 41%;
+	width: 8%;
+	height: 8%;
+	border-radius: 3px;
+	background-color: #1095C2;
+	cursor: pointer;
+}
+/* ------------------ */
+
+
+
+/* control panel labels */
+.textLabel {
+	position: absolute;
+	font: 12px 'Oswald',Arial,sans;
+	color: #222;
+}
+
+#countLabel {
+	top: 70%;
+	left: 17%;
+}
+
+#startLabel {
+	top: 70%;
+	left: 46.5%;
+}
+
+#strictLabel {
+	top: 70%;
+	left: 69.5%;
+}
+
+#offLabel {
+	top: 83.5%;
+	left: 30%;
+}
+
+#onLabel {
+	top: 83.5%;
+	left: 62%;
+}
+/* ------------------ */
+
+
+
+/* settings for smaller screens */
+@media screen and (max-width: 480px) {
+	
+	#outerCircle {
+		width: 250px;
+		height: 250px;
+		border: 13px solid #333;
+		box-shadow: 0px 0px 7px #333;
+	}
+	
+	#simonText {
+		font: 28px 'Alfa Slab One', cursive;
+	}
+	
+	sup {
+		font-size: 38%;
+	}
+	
+	#counter {
+		border-radius: 5px;
+		border: 3px solid #333;
+		line-height: 18px;
+		font-size: 17px;
+	}
+	
+	#startButton {
+		border: 3px solid #333;
+		box-shadow: 0px 1px 2px #333;
+	}
+
+	#strictButton {
+		border: 3px solid #333;
+		box-shadow: 0px 1px 2px #333;
+	}
+
+	#strictDiode {
+		top: 45%;
+		border: 2px solid #222;
+	}
+	
+	#switchButton {
+		border-radius: 2px;
+	}
+	
+	.textLabel {
+		font-size: 8px;
+	}
+}
+/* ------------------ */

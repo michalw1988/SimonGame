@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<title>Simon Game</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		
+		<!-- My CSS file and Google Fonts -->
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One" rel="stylesheet" /> 
+		<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" /> 
+		<link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet" /> 
+		
+		<!-- JS logic -->
+		<script src="script.js"></script> 
+	</head>
+	
+	
+	<body>
+
+		<!-- dark grey outer circle with all other elements inside -->
+		<div id="outerCircle">
+			
+			<!-- color buttons -->
+			<div class="colorButton" id="innerGreen"></div>
+			<div class="colorButton" id="innerRed"></div>
+			<div class="colorButton" id="innerYellow"></div>
+			<div class="colorButton" id="innerBlue"></div>
+			
+			<!-- dark grey bars -->
+			<div id="verticalBar"></div>
+			<div id="horizontalBar"></div>
+			
+			<!-- game control panel -->
+			<div id="panelOuter">
+				<div id="panelInner">
+				
+					<div id="simonText">Simon<sup>&#174;</sup></div>
+					
+					<!-- buttons, switches and display screen -->
+					<div id="counter">--</div>
+					<div id="startButton"></div>
+					<div id="strictButton"></div>
+					<div id="strictDiode"></div>
+					<div id="switch"></div>
+					<div id="switchButton"></div>
+					
+					<!-- labels for buttons, switches and display screen -->
+					<div class="textLabel" id="countLabel">COUNT</div>
+					<div class="textLabel" id="startLabel">START</div>
+					<div class="textLabel" id="strictLabel">STRICT</div>
+					<div class="textLabel" id="offLabel">OFF</div>
+					<div class="textLabel" id="onLabel">ON</div>
+			
+				</div>
+			</div>
+			
+		</div>
+		
+	</body>
+<html>
